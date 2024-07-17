@@ -50,7 +50,7 @@ class MontoyaSignalRExtension : BurpExtension, HttpRequestEditorProvider, ProxyR
                     Api.utilities().urlUtils().decode(it.parameterValue("data", HttpParameterType.URL))
                 )
                 Logger.debugLog("append notes")
-                interceptedRequest.annotations().appendNotes(jsonData.getString("H")+"."+jsonData.getString("M"))
+                it.annotations().appendNotes(jsonData.getString("H")+"."+jsonData.getString("M"))
                 Logger.debugLog("done appending notes")
             }
         }
