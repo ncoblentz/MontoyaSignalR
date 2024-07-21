@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.nickcoblentz.montoya"
-version = "0.1"
+version = "0.1.1"
 
 repositories {
     mavenLocal()
@@ -23,7 +23,7 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("net.portswigger.burp.extensions:montoya-api:2023.12.1")
     //implementation("com.nickcoblentz.montoya:MontoyaLibrary:0.1.12")
-    implementation("com.github.ncoblentz:BurpMontoyaLibrary:0.1.12")
+    implementation("com.github.ncoblentz:BurpMontoyaLibrary:0.1.13")
     implementation("com.github.milchreis:uibooster:1.21.1")
     implementation("org.json:json:20240303")
 

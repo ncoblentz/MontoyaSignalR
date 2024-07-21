@@ -20,7 +20,7 @@ class SignalRProvidedHttpRequestEditor(private val api: MontoyaApi, private val 
     private var signalrDataEditor: RawEditor
     private var data = ""
     private var httpRequestResponse : HttpRequestResponse? = null
-    private val Logger = MontoyaLogger(api,MontoyaLogger.DebugLogLevel)
+    private val Logger = MontoyaLogger(api,LogLevel.DEBUG)
 
     init {
         if(creationContext?.editorMode()?.equals(EditorMode.READ_ONLY) == true)

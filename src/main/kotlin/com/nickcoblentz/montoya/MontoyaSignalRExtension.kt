@@ -24,7 +24,7 @@ class MontoyaSignalRExtension : BurpExtension, HttpRequestEditorProvider, ProxyR
         }
         Api = api
 
-        Logger = MontoyaLogger(api, MontoyaLogger.DebugLogLevel)
+        Logger = MontoyaLogger(api, LogLevel.DEBUG)
         api.extension().setName(PluginName)
         Logger.debugLog( "Plugin Starting...")
         api.userInterface().registerHttpRequestEditorProvider(this);
